@@ -2102,6 +2102,15 @@ class MusicMood(KnowledgeEngine):
     """
         The end of Angry session
     """
+
+    """
+        The Heartbroken Session
+    """
+
+
+    """
+        The end of heartbroken session
+    """
     
     
     
