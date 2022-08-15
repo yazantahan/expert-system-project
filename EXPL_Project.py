@@ -131,7 +131,7 @@ class MusicMood(KnowledgeEngine):
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
             Fact(specific=L("y") | L("n")),
             NOT(Fact(isFeelBetter=W())))
-    def r4(self):
+    def n2(self):
         self.declare(Fact(isFeelBetter=input("Does that make you feel better? (Y/N)")))
 
     @Rule(Fact(action="music_mood"),
@@ -173,7 +173,7 @@ class MusicMood(KnowledgeEngine):
             Fact(happyType=L(1)))
     def r44(self):
         print("suggest Sweet-Child-O-mine, We will Rock you, Nothing’s Gonna Stop Us Now")
-        self.r4()
+        self.n2()
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
@@ -184,7 +184,7 @@ class MusicMood(KnowledgeEngine):
             Fact(happyType=L(2)))
     def r45(self):
         print("Suggest (Say yes, i Got you, up town Funk)")
-        self.r4()
+        self.n2()
     
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
@@ -605,7 +605,7 @@ class MusicMood(KnowledgeEngine):
             Fact(specific=L("y") | L("n")),
             Fact(isFeelBetter=L("y")),
             NOT(Fact(anotherSongs=W())))
-    def r88(self):
+    def m2(self):
         self.declare(Fact(anotherSongs=input("Do you want another sad song? (Y/N)")))
 
     @Rule(Fact(action="music_mood"),
@@ -615,7 +615,7 @@ class MusicMood(KnowledgeEngine):
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             NOT(Fact(continuePlaying=W())))
-    def r89(self):
+    def m3(self):
         self.declare(Fact(continuePlaying=input("Continue playing? (Y/N)")))
 
     @Rule(Fact(action="music_mood"),
@@ -639,7 +639,7 @@ class MusicMood(KnowledgeEngine):
             Fact(isCalmSad=L("y")))
     def r91(self):
         print("Play the Boxer")
-        self.r88()
+        self.m2()
     
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
@@ -673,7 +673,7 @@ class MusicMood(KnowledgeEngine):
             Fact(isAngrySad=L("y")))
     def r94(self):
         print("play Let it rain by sarah Bokson")
-        self.r88()
+        self.m2()
     
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
@@ -685,7 +685,7 @@ class MusicMood(KnowledgeEngine):
             Fact(isAngrySad=L("n")))
     def r95(self):
         print("suggest a song from dataset")
-        self.r89()
+        self.m3()
     
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
@@ -776,7 +776,7 @@ class MusicMood(KnowledgeEngine):
             Fact(originalOrNewFeeling=L(1)),
             Fact(continuePlaying=L("y")),
             NOT(Fact(likeIt=W())))
-    def r102(self):
+    def k2(self):
         print("play ala el ghobra")
         self.declare(Fact(likeIt=input("Like it? (Y/N)")))
 
@@ -808,7 +808,7 @@ class MusicMood(KnowledgeEngine):
             Fact(continuePlaying=L("y")),
             Fact(likeIt=L("n")))
     def r123(self):
-        self.r124()
+        self.k1()
     
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
@@ -822,7 +822,7 @@ class MusicMood(KnowledgeEngine):
             Fact(originalOrNewFeeling=L(1)),
             Fact(continuePlaying=L("n")),
             NOT(Fact(somethingFresh=W())))
-    def r124(self):
+    def k1(self):
         self.declare(Fact(somethingFresh=input("wanna something fresh? (Y/N)")))
     
     @Rule(Fact(action="music_mood"),
@@ -853,7 +853,7 @@ class MusicMood(KnowledgeEngine):
             Fact(continuePlaying=L("n")),
             Fact(somethingFresh=L("n")))
     def r126(self):
-        self.r101()
+        self.k2()
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
@@ -1384,7 +1384,7 @@ class MusicMood(KnowledgeEngine):
             Fact(specific=L("y") | L("n")),
             Fact(isFeelBetter=L("y")),
             NOT(Fact(anotherSongs=W())))
-    def r167(self):
+    def t2(self):
         self.declare(Fact(anotherSongs=input("Do you want another Angry song? (Y/N)")))
 
     @Rule(Fact(action="music_mood"),
@@ -1454,7 +1454,18 @@ class MusicMood(KnowledgeEngine):
             Fact(feelSoBad=L("n")),
             Fact(continuePlaying1=L("n")))
     def r173(self):
-        None
+        self.t2();
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(3)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("y") | L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(continuePlaying=L("n")))
+    def r167(self):
+        self.declare(Fact(anotherSongs=None))
+        self.t2();
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
@@ -1549,7 +1560,8 @@ class MusicMood(KnowledgeEngine):
             Fact(originalOrNewFeeling=L(1)),
             Fact(continuePlaying=L("n")))
     def r180(self):
-        None
+        self.declare(Fact(anotherSongs=None))
+        self.t2()
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
@@ -1642,7 +1654,8 @@ class MusicMood(KnowledgeEngine):
             Fact(feelDifferent=L("y")),
             Fact(likeIt=L("n")))
     def r185(self):
-        None
+        self.declare(Fact(anotherSongs=None))
+        self.t2()
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
@@ -1691,7 +1704,8 @@ class MusicMood(KnowledgeEngine):
             Fact(feelDifferent=L("n")),
             Fact(likeIt=L("n")))
     def r188(self):
-        None
+        self.declare(Fact(anotherSongs=None))
+        self.t2()
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
@@ -1843,7 +1857,7 @@ class MusicMood(KnowledgeEngine):
             Fact(addedAnotherFeeling=L(1) | L(2) | L(3)),
             Fact(originalOrNewFeeling=L(1)),
             NOT(Fact(moreThanThat=W())))
-    def r200(self):
+    def w8(self):
         print("play Useless sacrifice by Death Decline")
         self.declare(Fact(moreThanThat=input("Wanna more like that? (Y/N)")))
 
@@ -1891,7 +1905,9 @@ class MusicMood(KnowledgeEngine):
             Fact(moreThanThat=L("y")),
             Fact(likeIt=L("n")))
     def r203(self):
-        None
+        self.declare(moreThanThat=None)
+        self.declare(likeit=None)
+        self.w8()
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
@@ -1937,7 +1953,9 @@ class MusicMood(KnowledgeEngine):
             Fact(moreThanThat=L("y")),
             Fact(isMore=L("n")))
     def r206(self):
-        None
+        self.declare(moreThanThat=None)
+        self.declare(likeit=None)
+        self.w8()
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
@@ -1950,7 +1968,7 @@ class MusicMood(KnowledgeEngine):
             Fact(addedAnotherFeeling=L(1) | L(2) | L(3)),
             Fact(originalOrNewFeeling=L(2)),
             NOT(Fact(continuePlaying=W())))
-    def r207(self):
+    def x4(self):
         print("play live your life by IT")
         self.declare(Fact(continuePlaying=input("continue playing? (Y/N)")))
     
@@ -1998,7 +2016,7 @@ class MusicMood(KnowledgeEngine):
             Fact(continuePlaying=L("y")),
             Fact(isMore=L("n")))
     def r210(self):
-        None
+        self.x4()
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
@@ -2066,7 +2084,7 @@ class MusicMood(KnowledgeEngine):
             Fact(changeToHappy=L("y")),
             Fact(isMore1=L("n")))
     def r215(self):
-        None
+        self.x4()
 
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
@@ -2110,7 +2128,7 @@ class MusicMood(KnowledgeEngine):
             Fact(changeToHappy=L("n")),
             Fact(isMore1=L("n")))
     def r218(self):
-        None
+        self.x4()
     
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
@@ -2137,19 +2155,6 @@ class MusicMood(KnowledgeEngine):
             Fact(changetoSad=L("y")))
     def r220(self):
         print("change to sad")
-    
-    @Rule(Fact(action="music_mood"),
-            Fact(feel=L(3)),
-            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
-            Fact(isFeelBetter=L("n")),
-            Fact(anotherSongs=L("n")),
-            Fact(isFeelDifferent=L("n")),
-            Fact(anotherFeeling=L("n")),
-            Fact(lessOrMore=L(2)),
-            Fact(changetoSad=L("n")))
-    def r221(self):
-        None
 
     """
         The end of Angry session
