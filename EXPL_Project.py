@@ -129,7 +129,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             NOT(Fact(isFeelBetter=W())))
     def n2(self):
         self.declare(Fact(isFeelBetter=input("Does that make you feel better? (Y/N)")))
@@ -137,7 +137,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             NOT(Fact(anotherSongs=W())))
     def r41(self):
@@ -146,7 +146,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")))
     def r42(self):
@@ -155,7 +155,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             NOT(Fact(happyType=W())))
@@ -167,7 +167,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(happyType=L(1)))
@@ -178,7 +178,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(happyType=L(2)))
@@ -189,7 +189,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             NOT(Fact(isFeelDifferent=W())))
@@ -199,7 +199,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -211,7 +211,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -226,7 +226,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -241,7 +241,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -256,7 +256,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -271,7 +271,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -283,7 +283,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -296,7 +296,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -309,7 +309,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -322,7 +322,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -335,7 +335,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             NOT(Fact(addAnotherSong=W())))
     def r62(self):
@@ -344,7 +344,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(addAnotherSong=L("y")))
     def r63(self):
@@ -353,7 +353,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(addAnotherSong=L("n")),
             NOT(Fact(isFeelDifferent=W())))
@@ -363,7 +363,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -375,7 +375,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -390,7 +390,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -405,7 +405,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -420,7 +420,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -435,7 +435,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -447,7 +447,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -460,7 +460,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -473,7 +473,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -486,7 +486,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -499,7 +499,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(1)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y") | L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -594,7 +594,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             NOT(Fact(isFeelBetter=W())))
     def r87(self):
         self.declare(Fact(isFeelBetter=input("Does that make you feel better? (Y/N)")))
@@ -602,7 +602,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             NOT(Fact(anotherSongs=W())))
     def m2(self):
@@ -611,7 +611,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             NOT(Fact(continuePlaying=W())))
@@ -621,7 +621,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=W()),
@@ -632,7 +632,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("y")),
@@ -644,7 +644,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("y")),
@@ -655,7 +655,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("n")),
@@ -666,7 +666,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("n")),
@@ -678,7 +678,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("n")),
@@ -690,7 +690,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             NOT(Fact(isFeelDifferent=W())))
@@ -700,7 +700,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("y")))
@@ -710,7 +710,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -722,7 +722,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -737,7 +737,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -752,7 +752,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -767,7 +767,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -783,7 +783,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -798,7 +798,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -813,7 +813,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -828,7 +828,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -843,7 +843,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -858,7 +858,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -873,7 +873,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -889,7 +889,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -904,7 +904,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -919,7 +919,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -931,7 +931,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -944,7 +944,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -957,7 +957,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -970,7 +970,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -983,7 +983,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -996,7 +996,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             NOT(Fact(anotherSongs=W())))
     def r136(self):
@@ -1005,7 +1005,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("y")),
             NOT(Fact(continuePlaying=W())))
@@ -1015,7 +1015,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             NOT(Fact(isFeelDifferent=W())))
@@ -1025,7 +1025,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("y")))
@@ -1035,7 +1035,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1047,7 +1047,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1062,7 +1062,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1077,7 +1077,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1092,7 +1092,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1108,7 +1108,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1123,7 +1123,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1138,7 +1138,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1153,7 +1153,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1168,7 +1168,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1184,7 +1184,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1199,7 +1199,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1214,7 +1214,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1226,7 +1226,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1239,7 +1239,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1252,7 +1252,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1265,7 +1265,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1278,7 +1278,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(2)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1373,7 +1373,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             NOT(Fact(isFeelBetter=W())))
     def r166(self):
         self.declare(Fact(isFeelBetter=input("Does that make you feel better? (Y/N)")))
@@ -1381,7 +1381,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             NOT(Fact(anotherSongs=W())))
     def t2(self):
@@ -1390,7 +1390,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             NOT(Fact(continuePlaying=W())))
@@ -1400,7 +1400,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("y")),
@@ -1412,7 +1412,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("y")),
@@ -1423,7 +1423,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("y")),
@@ -1435,7 +1435,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("y")),
@@ -1447,7 +1447,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("y")),
@@ -1459,7 +1459,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("y")),
             Fact(continuePlaying=L("n")))
@@ -1470,7 +1470,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("y")))
@@ -1480,7 +1480,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1492,7 +1492,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1507,7 +1507,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1522,7 +1522,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1537,7 +1537,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1551,7 +1551,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1566,7 +1566,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1581,7 +1581,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1595,7 +1595,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1610,7 +1610,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1627,7 +1627,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1643,7 +1643,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1660,7 +1660,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1677,7 +1677,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1693,7 +1693,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1710,7 +1710,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1722,7 +1722,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1735,7 +1735,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1748,7 +1748,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1761,7 +1761,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1774,7 +1774,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("y")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1787,7 +1787,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             NOT(Fact(anotherSongs=W())))
     def r195(self):
@@ -1796,7 +1796,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             NOT(Fact(isFeelDifferent=W())))
@@ -1807,7 +1807,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1819,7 +1819,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1834,7 +1834,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1849,7 +1849,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1864,7 +1864,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1880,7 +1880,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1895,7 +1895,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1912,7 +1912,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1928,7 +1928,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1943,7 +1943,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1960,7 +1960,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1975,7 +1975,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -1991,7 +1991,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2006,7 +2006,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2021,7 +2021,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2033,7 +2033,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2046,7 +2046,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2061,7 +2061,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2075,7 +2075,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2089,7 +2089,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2105,7 +2105,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2119,7 +2119,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2133,7 +2133,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2146,7 +2146,7 @@ class MusicMood(KnowledgeEngine):
     @Rule(Fact(action="music_mood"),
             Fact(feel=L(3)),
             Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
-            Fact(specific=L("y") | L("n")),
+            Fact(specific=L("n")),
             Fact(isFeelBetter=L("n")),
             Fact(anotherSongs=L("n")),
             Fact(isFeelDifferent=L("n")),
@@ -2164,6 +2164,515 @@ class MusicMood(KnowledgeEngine):
         The Heartbroken Session
     """
 
+    
+    """
+        For the Vocal songs
+    """
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=L(1)), # 1 -> Vocal
+            NOT(Fact(specific=W())))
+    def r300(self):
+        self.declare(Fact(specific=input("is there anything specific? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=L(1)), # 1 -> Vocal
+            Fact(specific=L("y")))
+    def r301(self):
+        None
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=L(1)), # 1 -> Vocal
+            Fact(specific=L("n")))
+    def r302(self):
+        None
+
+    
+    """
+        For the Instrumental songs
+    """
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=L(2)), # 2 -> Instrumental
+            NOT(Fact(specific=W())))
+    def r303(self):
+        self.declare(Fact(specific=input("is there anything specific? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=L(2)), # 2 -> Instrumental
+            Fact(specific=L("y")))
+    def r304(self):
+        None
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=L(2)), # 2 -> Instrumental
+            Fact(specific=L("n")))
+    def r305(self):
+        None
+    
+    """
+        For the Traditional songs
+    """
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=L(3)), # 3 -> Traditional
+            NOT(Fact(specific=W())))
+    def r306(self):
+        self.declare(Fact(specific=input("is there anything specific? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=MATCH.musicType), # 3 -> Traditional
+            Fact(specific=L("y")))
+    def r307(self, musicType):
+        None
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=L(3)), # 3 -> Traditional
+            Fact(specific=L("n")))
+    def r308(self):
+        None
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            NOT(Fact(isFeelBetter=W())))
+    def r309(self):
+        self.declare(Fact(isFeelBetter=input("Does that make you feel better? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            NOT(Fact(anotherSongs=W())))
+    def r310(self):
+        self.declare(Fact(anotherSongs=input("Do you want another Heartbroken song? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            NOT(Fact(feelDifferent=W())))
+    def r311(self):
+        print("play omri bm7btk lost")
+        self.declare(Fact(feelDifferent=input("Do you feel different? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            NOT(Fact(addAnotherFeeling=W())))
+    def r312(self):
+        self.declare(Fact(addAnotherFeeling=input("Do you want to add another feeling? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            NOT(Fact(addedFeeling=W())))
+    def r329(self):
+        self.declare(Fact(addedFeeling=input("What feeling do you want to add? \n1-Sad \n2-Angry \n3-Happy")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            NOT(Fact(originalOrNew=W())))
+    def r313(self):
+        self.declare(Fact(originalOrNew=input("Which feeling you tend to feel more? \n1- The original \n 2- new added feeling")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("1")),
+            NOT(Fact(continuePlaying=W())))
+    def r314(self):
+        print("play Sad iraqi songs")
+        self.declare(Fact(continuePlaying=input("Continue playing? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("1")),
+            Fact(continuePlaying=L("y")),
+            NOT(Fact(continuePlaying1=W())))
+    def r315(self):
+        print("play I will survive")
+        self.declare(Fact(continuePlaying1=input("Continue playing? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("1")),
+            Fact(continuePlaying=L("y")),
+            Fact(continuePlaying1=W("y")))
+    def r316(self):
+        print("play babe i am gonna leave you")
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("1")),
+            Fact(continuePlaying=L("y")),
+            Fact(continuePlaying1=W("n")),
+            NOT(Fact(suggestSomething=W())))
+    def r317(self):
+        self.declare(suggestSomething=input("suggest something cool? (Y/N)"))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("1")),
+            Fact(continuePlaying=L("y")),
+            Fact(continuePlaying1=W("n")),
+            Fact(suggestSomething=L("y")))
+    def r318(self):
+        print("play sweet child \'o mine")
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("1")),
+            Fact(continuePlaying=L("y")),
+            Fact(continuePlaying1=W("n")),
+            Fact(suggestSomething=L("n")))
+    def r319(self):
+        print("play gloomy sunday")
+
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("2")),
+            NOT(Fact(continuePlaying=W())))
+    def r320(self):
+        print("play Happy BY pharrel williams")
+        self.declare(Fact(continuePlaying=input("Continue playing? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("2")),
+            Fact(continuePlaying=L("y")),
+            NOT(Fact(continuePlaying1=W())))
+    def r321(self):
+        print("play stairway to hevean")
+        self.declare(Fact(continuePlaying1=input("Continue playing? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("2")),
+            Fact(continuePlaying=L("y")),
+            Fact(continuePlaying1=W("y")))
+    def r322(self):
+        print("play uptown funk")
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("2")),
+            Fact(continuePlaying=L("y")),
+            Fact(continuePlaying1=W("n")))
+    def r323(self):
+        print("play tears in heaven")
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            NOT(Fact(lessOrMore=W())))
+    def r324(self):
+        self.declare(Fact(lessOrMore=input("Are you? \n1- less heartbroken \n2- more heartbroken")))
+    
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            Fact(lessOrMore=L("1")),
+            NOT(Fact(changeToHappy=W())))
+    def r325(self):
+        self.declare(Fact(changeToHappy=input("Want to change to Happy? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            Fact(lessOrMore=L("1")),
+            Fact(changeToHappy=L("y")))
+    def r326(self):
+        print("Change feeling to Happy")
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            Fact(lessOrMore=L("2")),
+            NOT(Fact(changeToSad=W())))
+    def r327(self):
+        self.declare(Fact(changeToHappy=input("Are you Sad? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("y")),
+            Fact(anotherSongs=L("y")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            Fact(lessOrMore=L("2")),
+            Fact(changeToSad=L("y")))
+    def r328(self):
+        print("Change feeling to Sad")
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            NOT(Fact(anotherSongs=W())))
+    def r335(self):
+        self.declare(Fact(anotherSongs=input("Do you want another Heartbroken song? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            NOT(Fact(feelDifferent=W())))
+    def r330(self):
+        self.declare(Fact(feelDifferent=input("Do you feel different? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            NOT(Fact(addAnotherFeeling=W())))
+    def r331(self):
+        self.declare(Fact(addAnotherFeeling=input("Do you want to add another feeling? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            NOT(Fact(addedFeeling=W())))
+    def r332(self):
+        self.declare(Fact(addedFeeling=int(input("What feeling do you want to add? \n1-Sad \n2-Angry \n3-Happy"))))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            NOT(Fact(originalOrNew=W())))
+    def r333(self):
+        self.declare(Fact(originalOrNew=input("Which feeling you tend to feel more? \n1- The original \n 2- new added feeling")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("1")),
+            NOT(Fact(continuePlaying=W())))
+    def r334(self):
+        print("play november rain by gunz n roses")
+        self.declare(Fact(continuePlaying=input("Continue playing? (Y/N)")))
+
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("y")),
+            Fact(addedFeeling=L(1) | L(2) | L(3)),
+            Fact(originalOrNew=L("2")),
+            NOT(Fact(continuePlaying=W())))
+    def r336(self):
+        print("play i got feeling by will i am")
+        self.declare(Fact(continuePlaying=input("Continue playing? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            NOT(Fact(lessOrMore=W())))
+    def r337(self):
+        self.declare(Fact(lessOrMore=input("Are you? \n1- less heartbroken \n2- more heartbroken")))
+    
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            Fact(lessOrMore=L("1")),
+            NOT(Fact(changeToHappy=W())))
+    def r338(self):
+        self.declare(Fact(changeToHappy=input("Want to change to Happy? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            Fact(lessOrMore=L("1")),
+            Fact(changeToHappy=L("y")))
+    def r339(self):
+        print("Change feeling to Happy")
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            Fact(lessOrMore=L("2")),
+            NOT(Fact(changeToSad=W())))
+    def r340(self):
+        self.declare(Fact(changeToHappy=input("Are you Sad? (Y/N)")))
+
+    @Rule(Fact(action="music_mood"),
+            Fact(feel=L(4)),
+            Fact(musicType=P(lambda x: x > 0) & P(lambda x: x <= 3)),
+            Fact(specific=L("n")),
+            Fact(isFeelBetter=L("n")),
+            Fact(anotherSongs=L("n")),
+            Fact(feelDifferent=L("n")),
+            Fact(addAnotherFeeling=L("n")),
+            Fact(lessOrMore=L("2")),
+            Fact(changeToSad=L("y")))
+    def r341(self):
+        print("Change feeling to Sad")
+    
 
     """
         The end of heartbroken session
@@ -2179,4 +2688,8 @@ engine = MusicMood()
 while (1):
     engine.reset()
     engine.run()
-    engine.facts
+
+    if input("Continue questioning? (Y/N)") == "n":
+        break
+    
+engine.facts
